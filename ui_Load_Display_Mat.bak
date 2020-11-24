@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui_Load_Display_Mat.ui'
+#
+# Created: Mon Nov 16 15:53:50 2020
+#      by: PyQt5 UI code generator 5.3.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide2 import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
+class Ui_LoadDisplayMatWindow(object):
+    def setupUi(self, LoadDisplayMatWindow):
+        LoadDisplayMatWindow.setObjectName("LoadDisplayMatWindow")
+        LoadDisplayMatWindow.resize(400, 600)
+        LoadDisplayMatWindow.setMaximumSize(QtCore.QSize(400, 600))
+        self.centralWidget = QWidget(LoadDisplayMatWindow)
+        self.centralWidget.setObjectName("centralWidget")
+        self.allWidget = QWidget(self.centralWidget)
+        self.allWidget.setGeometry(QtCore.QRect(0, 0, 400, 600))
+        self.allWidget.setMinimumSize(QtCore.QSize(400, 600))
+        self.allWidget.setObjectName("allWidget")
+        self.allLayout = QVBoxLayout(self.allWidget)
+        self.allLayout.setContentsMargins(0, 0, 0, 0)
+        self.allLayout.setObjectName("allLayout")
+        self.aWidget = QWidget(self.allWidget)
+        self.aWidget.setMaximumSize(QtCore.QSize(400, 50))
+        self.aWidget.setObjectName("aWidget")
+        self.aLayout = QHBoxLayout(self.aWidget)
+        self.aLayout.setContentsMargins(0, 0, 0, 0)
+        self.aLayout.setObjectName("aLayout")
+        self.outlabel = QLabel(self.aWidget)
+        self.outlabel.setObjectName("outlabel")
+        self.aLayout.addWidget(self.outlabel)
+        self.pathlineEdit = QLineEdit(self.aWidget)
+        self.pathlineEdit.setObjectName("pathlineEdit")
+        self.aLayout.addWidget(self.pathlineEdit)
+        self.lookpushButton = QPushButton(self.aWidget)
+        self.lookpushButton.setObjectName("lookpushButton")
+        self.aLayout.addWidget(self.lookpushButton)
+        self.allLayout.addWidget(self.aWidget)
+        self.bWidget = QWidget(self.allWidget)
+        self.bWidget.setMaximumSize(QtCore.QSize(400, 40))
+        self.bWidget.setObjectName("bWidget")
+        self.bLayout = QHBoxLayout(self.bWidget)
+        self.bLayout.setContentsMargins(0, 0, 0, 0)
+        self.bLayout.setObjectName("bLayout")
+        self.filelabel = QLabel(self.bWidget)
+        self.filelabel.setObjectName("filelabel")
+        self.bLayout.addWidget(self.filelabel)
+        self.cleanpushButton = QPushButton(self.bWidget)
+        self.cleanpushButton.setObjectName("cleanpushButton")
+        self.bLayout.addWidget(self.cleanpushButton)
+        self.allLayout.addWidget(self.bWidget)
+        self.cWidget = QWidget(self.allWidget)
+        self.cWidget.setMaximumSize(QtCore.QSize(400, 450))
+        self.cWidget.setObjectName("cWidget")
+        self.cLayout = QVBoxLayout(self.cWidget)
+        self.cLayout.setContentsMargins(0, 0, 0, 0)
+        self.cLayout.setObjectName("cLayout")
+        self.main_tableWidget = QTableWidget(self.cWidget)
+        self.main_tableWidget.setObjectName("main_tableWidget")
+        self.main_tableWidget.setColumnCount(0)
+        self.main_tableWidget.setRowCount(0)
+        self.cLayout.addWidget(self.main_tableWidget)
+        self.allLayout.addWidget(self.cWidget)
+        self.dWidget = QWidget(self.allWidget)
+        self.dWidget.setMaximumSize(QtCore.QSize(400, 150))
+        self.dWidget.setObjectName("dWidget")
+        self.dLayout = QVBoxLayout(self.dWidget)
+        self.dLayout.setContentsMargins(0, 0, 0, 0)
+        self.dLayout.setObjectName("dLayout")
+        self.staBrowser = QTextBrowser(self.dWidget)
+        self.staBrowser.setMaximumSize(QtCore.QSize(400, 100))
+        self.staBrowser.setObjectName("staBrowser")
+        self.dLayout.addWidget(self.staBrowser)
+        self.progressBar = QProgressBar(self.dWidget)
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setObjectName("progressBar")
+        self.dLayout.addWidget(self.progressBar)
+        self.extpushButton = QPushButton(self.dWidget)
+        self.extpushButton.setObjectName("extpushButton")
+        self.dLayout.addWidget(self.extpushButton)
+        self.allLayout.addWidget(self.dWidget)
+        LoadDisplayMatWindow.setCentralWidget(self.centralWidget)
+
+        self.retranslateUi(LoadDisplayMatWindow)
+        QtCore.QMetaObject.connectSlotsByName(LoadDisplayMatWindow)
+
+    def retranslateUi(self, LoadDisplayMatWindow):
+        _translate = QtCore.QCoreApplication.translate
+        LoadDisplayMatWindow.setWindowTitle(_translate("LoadDisplayMatWindow", "加载显示材质"))
+        self.outlabel.setText(_translate("LoadDisplayMatWindow", "材质文件"))
+        self.lookpushButton.setText(_translate("LoadDisplayMatWindow", "浏览"))
+        self.filelabel.setText(_translate("LoadDisplayMatWindow", "需要上材质的模型"))
+        self.cleanpushButton.setText(_translate("LoadDisplayMatWindow", "重新获取"))
+        self.extpushButton.setText(_translate("LoadDisplayMatWindow", "开始"))
+

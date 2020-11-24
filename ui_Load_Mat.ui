@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoadMatWindow</class>
+ <widget class="QMainWindow" name="LoadMatWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>90</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>加载材质</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="allWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>90</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <layout class="QVBoxLayout" name="allLayout">
+     <item>
+      <widget class="QWidget" name="aWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>50</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="aLayout">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>3</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="outlabel">
+          <property name="text">
+           <string>材质链接文件</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pathlineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="lookpushButton">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="bWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>40</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="bLayout">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>3</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="filelabel">
+          <property name="text">
+           <string>未找到文件</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cleanpushButton">
+          <property name="text">
+           <string>加载材质</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

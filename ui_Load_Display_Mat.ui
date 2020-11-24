@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoadDisplayMatWindow</class>
+ <widget class="QMainWindow" name="LoadDisplayMatWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>加载显示材质</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="allWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>600</height>
+     </size>
+    </property>
+    <layout class="QVBoxLayout" name="allLayout">
+     <item>
+      <widget class="QWidget" name="aWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>50</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="aLayout">
+        <item>
+         <widget class="QLabel" name="outlabel">
+          <property name="text">
+           <string>材质文件</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pathlineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="lookpushButton">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="bWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>40</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="bLayout">
+        <item>
+         <widget class="QLabel" name="filelabel">
+          <property name="text">
+           <string>需要上材质的模型</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cleanpushButton">
+          <property name="text">
+           <string>重新获取</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="cWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="cLayout">
+        <item>
+         <widget class="QTableWidget" name="main_tableWidget"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="dWidget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>150</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="dLayout">
+        <item>
+         <widget class="QTextBrowser" name="staBrowser">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>100</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="extpushButton">
+          <property name="text">
+           <string>开始</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
